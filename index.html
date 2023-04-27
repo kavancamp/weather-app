@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles.css" />
+
+    <title>Weather app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                placeholder="Type a city.."
+                autofocus="on"
+                autocomplete="off"
+                id="city-input"
+                class="form-control"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-primary"
+              />
+            </div>
+          </div>
+        </form>
+        <h1 id="city">Sydney NSW, Australia</h1>
+        <ul>
+          <li id="date"></li>
+          <li>Partly Cloudy</li>
+        </ul>
+        <div class="row">
+          <div class="col-6">
+            <div class="clearfix">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAaxJREFUaN7tmdGNhCAQhi1hS7CELcEGLrGELcESpgRLsAQ7uCvBV98swQ44uIwXzhMYgQE2geR/MZPN/8nv4LiNEKJ5ZzUVoAJUgApQAaICUNe6rh3q2SRcQQDS7ENqktqlhKZNCooGkAZbNCosmkoGWBzmD0FxANLUi2j+kNqtXmpEDepaToD5JgDb7vgCfEUCUBrfHUCpSwKAbRMu2maoZnYAdUAxGD+0swIwm1dx7A3nzLlZzOfuRQVYmMy/MJYDRhPwdaS13LBdh3ACYP/mMA+W03yjPjMUAODIPN557252B2DiyD1GM3QHfyKYegdAe0hj/J6K29MGMETO/YPhINyOnbgCaGP2egbzvx3N1kbHQnJv3d2gkTLXijYTV4AMIyXoB4pvzcfn2kstvjW+8wBo3QSu3ucpNWgOpFyQxhpfAOdoSB0fswBEjtA/cyouKjaUmhCAzjWUU2oM5oS6TqnJ3oWSAVA+g/h8KmEHOGKgjX9gioqtJicAmIaJ88Nqq7nT4y8AjDXZI2SA+gNgq7kDAK4PUJSabAAp1/kcsNXU/8gqQAWoAGXpGzmRTGmgvhAvAAAAAElFTkSuQmCC"
+                alt="icon"
+                class="icon float-left"
+              />
+              <div class="float-left">
+                <span class="temperature" id="temperature">19</span
+                ><span class="f">
+                  <a href="#" id="fahrenheit">°F</a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li>Precipitation: 0%</li>
+              <li>Humidity: 77%</li>
+              <li>Wind: 8 km/h</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
